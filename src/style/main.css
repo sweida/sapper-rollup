@@ -1,0 +1,7 @@
+main {
+    position: relative;
+    max-width: 56em;
+    background-color: white;
+    margin: 40px auto;
+    box-sizing: border-box;
+}

@@ -1,0 +1,310 @@
+body {
+	margin: 0;
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5em 0;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+em, i{
+	font-style: normal;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+a {
+	color: inherit;
+}
+li{
+	list-style: none;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+img{
+	width: 100%;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+code {
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+	color: #555;
+	background-color: #f0f0f0;
+	padding: 0.2em 0.4em;
+	border-radius: 2px;
+}
+
+
+
+.content{
+	padding: 0 20px;
+}
+
+/* 按钮 */
+*{
+    -webkit-transition: all .55s cubic-bezier(.19,1,.22,1);
+    transition: all .55s cubic-bezier(.19,1,.22,1);
+    margin: 0;
+}
+
+button {
+    outline: none;
+}
+
+button[disabled] {
+    opacity: .7
+}
+
+.button {
+    font-size: 14px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+	height: 44px;
+	width: 100%;
+    margin: .25em 0;
+    padding: 0 30px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 44px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent
+}
+
+.button:after {
+    background: -webkit-gradient(linear,left bottom,right top,from(transparent),to(#fff));
+    background: linear-gradient(to top right,transparent,#fff);
+    content: "";
+    height: 150px;
+    left: -175px;
+    opacity: .1;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    width: 100px
+}
+
+.button:disabled {
+    pointer-events: none
+}
+
+.button:focus {
+    outline: none
+}
+
+.button.primary {
+    background: -webkit-gradient(linear,left bottom,right top,from(#41b782),to(#86d169));
+    background: linear-gradient(to top right,#41b782,#86d169)
+}
+
+.button.primary.border {
+    color: #39b982;
+    border-color: #39b982
+}
+
+.button.secondary {
+    background: -webkit-gradient(linear,left bottom,right top,from(#122549),to(#203762));
+    background: linear-gradient(to top right,#122549,#203762)
+}
+
+.button.secondary.border {
+    color: #0a2b4e;
+    border-color: #0a2b4e
+}
+
+.button.danger {
+    background: -webkit-gradient(linear,left bottom,right top,from(#eb4641),to(#f06372));
+    background: linear-gradient(to top right,#eb4641,#f06372)
+}
+
+.button.danger.border {
+    color: #eb4641;
+    border-color: #eb4641
+}
+
+.button.inverted {
+    background: #fff;
+    color: #39b982
+}
+
+.button.inverted.border {
+    color: #fff;
+    border-color: #fff
+}
+
+.button.inverted.border:hover {
+    color: #0a2b4e
+}
+
+.button.border {
+    background: transparent;
+    border: 2px solid #0a2b4e;
+    line-height: 40px
+}
+
+.button.-small {
+    height: 44px;
+    padding: 0 15px;
+    line-height: 44px
+}
+
+.button.-small.-has-icon {
+    line-height: inherit
+}
+
+.button.-full {
+    white-space: nowrap;
+    width: 100%
+}
+
+.button.-has-icon,.button.-only-icon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden
+}
+
+.button.-has-icon i[class*=fa],.button.-has-icon i[class*=fab],.button.-only-icon i[class*=fa],.button.-only-icon i[class*=fab] {
+    margin-right: 10px
+}
+
+.button.-has-icon:after,.button.-only-icon:after {
+    content: none
+}
+
+.button.-has-icon i,.button.-only-icon i {
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.19,1,.22,1);
+    transition: -webkit-transform .5s cubic-bezier(.19,1,.22,1);
+    transition: transform .5s cubic-bezier(.19,1,.22,1);
+    transition: transform .5s cubic-bezier(.19,1,.22,1),-webkit-transform .5s cubic-bezier(.19,1,.22,1)
+}
+
+.button.link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #0a2b4e
+}
+
+.button.link.inverted {
+    color: #fff
+}
+
+.button .icon {
+    margin-right: 8px
+}
+
+
+
+
+
+.button:hover,a:hover .button {
+    text-decoration: none
+}
+
+.button:hover:after,a:hover .button:after {
+    left: 120%;
+    -webkit-transition: left 1.5s cubic-bezier(.19,1,.22,1);
+    transition: left 1.5s cubic-bezier(.19,1,.22,1)
+}
+
+.button:hover.primary,a:hover .button.primary {
+    background: -webkit-gradient(linear,left top,right bottom,from(#41b782),to(#86d169));
+    background: linear-gradient(to bottom right,#41b782,#86d169)
+}
+
+.button:hover.secondary,a:hover .button.secondary {
+    background: -webkit-gradient(linear,left top,right bottom,from(#122549),to(#203762));
+    background: linear-gradient(to bottom right,#122549,#203762)
+}
+
+.button:hover.danger,a:hover .button.danger {
+    background: -webkit-gradient(linear,left top,right bottom,from(#eb4641),to(#f06372));
+    background: linear-gradient(to bottom right,#eb4641,#f06372)
+}
+
+.button:hover.inverted,a:hover .button.inverted {
+    background: #fff
+}
+
+.button:hover.border,a:hover .button.border {
+    border-color: transparent;
+    color: #fff
+}
+
+.button:hover.-only-icon,a:hover .button.-only-icon {
+    background: transparent;
+    text-decoration: none
+}
+
+.button:hover.-only-icon i,a:hover .button.-only-icon i {
+    -webkit-transform: scale(.9);
+    transform: scale(.9)
+}
+
+
+/* 输入框 */
+input{
+	text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+	font: 400 14px system-ui;
+	outline: none;
+}
+.input {
+	box-sizing: border-box;
+    width: 100%;
+    padding: 0 27px;
+    margin: 8px 0;
+    height: 50px;
+    line-height: 54px;
+    border: 2px solid #bbb;
+    border-radius: 30px;
+}
+input:focus{
+	border: 2px solid #69c574;
+}
+@media (min-width: 400px) {
+	body {
+		font-size: 16px;
+	}
+}
